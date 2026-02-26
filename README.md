@@ -1,15 +1,15 @@
 # ⚡ Power Plant Energy Output Predictor (PyTorch)
 
-This project implements an **Artificial Neural Network (ANN)** using **PyTorch** to predict the net hourly electrical energy output ($EP$) of a Combined Cycle Power Plant. The model analyzes environmental factors to provide high-accuracy regression.
+This project implements an **Artificial Neural Network (ANN)** using **PyTorch** to predict the net hourly electrical energy output ($EP$) of a Combined Cycle Power Plant. By analyzing ambient environmental factors, the model provides high-precision regression for energy forecasting.
 
 ---
 
 ### 🚀 Features
 
-* **PyTorch Tensors:** Utilizes high-performance tensor computations for model training.
-* **Dynamic Graphing:** Leverages PyTorch's autograd for efficient backpropagation.
-* **Feature Engineering:** Implements standard scaling to normalize input variables like Temperature ($T$) and Ambient Pressure ($AP$).
-* **Evaluation Metrics:** Includes loss tracking to monitor convergence during the training loop.
+* **PyTorch Core:** Built using `torch.nn` for modular and efficient deep learning.
+* **Deep Regression:** Designed to capture non-linear relationships between weather data and power output.
+* **Standardized Pipeline:** Includes full data preprocessing with `StandardScaler` for optimized neural network training.
+* **Performance Tracking:** Uses Mean Squared Error (MSE) to monitor and minimize prediction variance.
 
 ---
 
@@ -17,35 +17,34 @@ This project implements an **Artificial Neural Network (ANN)** using **PyTorch**
 
 
 
-* **Data Preprocessing:** Data is split into training and testing sets, then converted into PyTorch Tensors after being scaled with `StandardScaler`.
-* **ANN Architecture:** * **Input Layer:** 4 neurons for environmental features.
-    * **Hidden Layers:** A Sequential stack of two Linear layers with 6 neurons each, utilizing **ReLU** activation.
-    * **Output Layer:** A single Linear neuron for continuous value regression ($EP$).
-* **Optimization:** The model uses the **Adam** optimizer and **MSELoss** (Mean Squared Error) to minimize prediction error.
+* **Data Preprocessing:** Features ($T$, $V$, $AP$, $RH$) are scaled to a standard normal distribution before being converted into PyTorch tensors.
+* **ANN Architecture:** * **Input Layer:** 4 neurons receiving environmental data.
+    * **Hidden Layers:** Two dense layers (`nn.Linear`) with 6 neurons each, utilizing **ReLU** activation for non-linearity.
+    * **Output Layer:** 1 neuron providing the continuous predicted value for $EP$.
+* **Optimization:** The model is trained using the **Adam** optimizer to find the global minimum of the loss function efficiently.
 
 ---
 
 ### 🛠 Tech Stack
 
 * **Language:** Python
-* **Framework:** PyTorch (torch, torch.nn)
-* **Data Science:** Scikit-Learn, Pandas, NumPy
+* **Framework:** PyTorch (`torch`, `torch.nn`)
+* **Libraries:** Scikit-Learn, Pandas, NumPy
 * **Environment:** Jupyter Notebook / Anaconda
 
 ---
 
 ### 📈 Business Impact
 
-Accurate energy prediction allows for:
-* **Proactive Load Balancing:** Better integration of power plant output into the national grid.
-* **Operational Savings:** Reducing fuel waste by predicting output based on current weather conditions.
-* **Precision Analytics:** Moving from heuristic-based estimation to data-driven deep learning models.
+* **Grid Efficiency:** Enables more accurate energy supply forecasting for grid operators.
+* **Cost Reduction:** Minimizes operational overhead by automating output estimations.
+* **Environmental Adaptation:** Helps plants adjust operations based on fluctuating ambient temperature and pressure.
 
 ---
 
 ### 📁 Project Structure
 
-
+```text
 ANN_Regression/
 ├── regression.ipynb       # PyTorch Model training and evaluation
 ├── app.py                 # Application script
