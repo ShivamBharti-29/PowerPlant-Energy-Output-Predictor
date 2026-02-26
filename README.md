@@ -45,7 +45,7 @@ Accurate energy prediction allows for:
 
 ### 📁 Project Structure
 
-
+```text
 ANN_Regression/
 ├── regression.ipynb       # PyTorch Model training and evaluation
 ├── app.py                 # Application script
@@ -53,16 +53,10 @@ ANN_Regression/
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
 
----
 
-### 📬 Author
 
-**Shivam Bharti**  
-GitHub: https://github.com/ShivamBharti-29
 
----
 
-⭐ If you found this project useful, consider giving it a star!
 
 
 
