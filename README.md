@@ -45,13 +45,14 @@ Accurate energy prediction allows for:
 
 ### 📁 Project Structure
 
-```text
+
 ANN_Regression/
 ├── regression.ipynb       # PyTorch Model training and evaluation
 ├── app.py                 # Application script
 ├── prediction.py          # Prediction utilities
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
+
 
 
 
