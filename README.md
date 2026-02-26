@@ -55,8 +55,14 @@ ANN_Regression/
 
 ---
 
-### 👤 Author
+---
 
-**Shivam Bharti** GitHub: [https://github.com/ShivamBharti-29](https://github.com/ShivamBharti-29)
+## 📬 Author
 
-⭐ *If you found this project useful, consider giving it a star!*
+**Shivam Bharti**  
+GitHub: https://github.com/ShivamBharti-29
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
+
